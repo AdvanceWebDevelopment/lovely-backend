@@ -1,4 +1,4 @@
-INSERT INTO `description` (`product_id`,`create_at`,`description`)
+INSERT IGNORE INTO `description` (`product_id`,`create_at`,`description`)
 VALUES
   (51,"2021-12-04","neque et nunc. Quisque ornare tortor at risus. Nunc ac sem ut dolor dapibus gravida. Aliquam tincidunt, nunc ac mattis ornare, lectus ante dictum mi, ac mattis"),
   (47,"2021-12-25","magna. Suspendisse tristique neque venenatis lacus. Etiam bibendum fermentum metus. Aenean sed pede nec ante blandit viverra. Donec tempus, lorem fringilla ornare placerat, orci lacus vestibulum lorem,"),
@@ -10,7 +10,7 @@ VALUES
   (52,"2021-12-14","Proin ultrices. Duis volutpat nunc sit amet metus. Aliquam erat volutpat. Nulla facilisis. Suspendisse commodo tincidunt nibh. Phasellus nulla. Integer vulputate, risus"),
   (46,"2021-12-30","a, scelerisque sed, sapien. Nunc pulvinar arcu et pede. Nunc sed orci lobortis augue scelerisque mollis. Phasellus libero mauris, aliquam eu, accumsan"),
   (49,"2021-12-06","rutrum magna. Cras convallis convallis dolor. Quisque tincidunt pede ac urna. Ut tincidunt vehicula risus. Nulla eget metus eu erat semper rutrum. Fusce dolor quam, elementum at, egestas a,");
-INSERT INTO `description` (`product_id`,`create_at`,`description`)
+INSERT IGNORE INTO `description` (`product_id`,`create_at`,`description`)
 VALUES
   (55,"2021-12-31","diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce aliquet magna a neque. Nullam"),
   (52,"2021-12-26","id enim. Curabitur massa. Vestibulum accumsan neque et nunc. Quisque ornare tortor at risus. Nunc ac sem ut dolor dapibus"),

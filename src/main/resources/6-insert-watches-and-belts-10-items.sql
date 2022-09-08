@@ -1,4 +1,4 @@
-INSERT INTO `product` (`id`,`create_at`,`current_price`,`end_at`,`name`,`seller_id`,`subcategory_id`,`auto_bid`,`step_price`)
+INSERT IGNORE INTO `product` (`id`,`create_at`,`current_price`,`end_at`,`name`,`seller_id`,`subcategory_id`,`auto_bid`,`step_price`)
 VALUES
   (46,"2021-11-07",519204803,"2022-01-09","Đồng Hô Rolex Titinium",60,3,1,6650007),
   (47,"2021-11-25",285284268,"2022-01-06","Đồng Hồ Cơ Học Casio",78,3,1,9694443),

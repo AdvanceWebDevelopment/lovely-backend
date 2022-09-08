@@ -1,4 +1,4 @@
-INSERT INTO `product` (`id`, `create_at`,`current_price`,`end_at`,`name`,`seller_id`,`subcategory_id`,`auto_bid`,`step_price`)
+INSERT IGNORE INTO `product` (`id`, `create_at`,`current_price`,`end_at`,`name`,`seller_id`,`subcategory_id`,`auto_bid`,`step_price`)
 VALUES
   (62,"2021-11-13 06:45:39",722557391,"2022-01-29 05:10:03","Bộ Tranh Chaos Fisure",66,9,1,922337),
   (63,"2021-11-18 10:22:02",100325897,"2022-01-26 07:49:37","Toàn Cảnh Mondstadt",98,9,0,793295),

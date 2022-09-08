@@ -89,7 +89,8 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter {
                         "/api/subcategory/**",
                         "/api/products/**",
                         "/api/product/**",
-                        "/.well-known/pki-validation/319E22B8FBE1EEC5384E8A2A7F277A3C.txt"
+                        "/.well-known/pki-validation/319E22B8FBE1EEC5384E8A2A7F277A3C.txt",
+                        "/"
                 ).permitAll().anyRequest().authenticated()
                 .and()
                 .oauth2Login()

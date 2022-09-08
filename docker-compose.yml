@@ -29,7 +29,7 @@ services:
       - FB_SECRET=20ac444fb96791a3ee633cff5c9faab8
       - GITHUB_SECRET=6f560db5c35d10928dde187d29eac0adc6d52b3b
       - APP_AUTH_SECRET=04ca023b39512e46d0c2cf4b48d5aac61d34302994c87ed4eff225dcf3b0a218739f3897051a057f9b846a69ea2927a587044164b7bae5e1306219d50b588cb1
-      - ALLOWED_ORIGINS=*
+      - ALLOWED_ORIGINS=http://localhost:3000,http://localhost:8080
       - AUTH_REDIRECT_URI=http://localhost:3000/oauth2/redirect
       - JWT_SECRET=CanLaoViTienThu
       - EMAIL=Hoangtestlogin@gmail.com

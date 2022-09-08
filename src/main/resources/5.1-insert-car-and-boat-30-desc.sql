@@ -1,4 +1,4 @@
-INSERT INTO `description` (`create_at`,`product_id`,`description`)
+INSERT IGNORE INTO `description` (`create_at`,`product_id`,`description`)
 VALUES
   ("2021-11-26 01:02:53",76,"sit amet metus. Aliquam erat volutpat. Nulla facilisis. Suspendisse commodo tincidunt nibh. Phasellus nulla. Integer vulputate, risus a ultricies adipiscing, enim mi tempor lorem, eget"),
   ("2021-11-11 23:21:03",76,"erat nonummy ultricies ornare, elit elit fermentum risus, at fringilla purus mauris a nunc. In at pede. Cras vulputate velit eu sem. Pellentesque ut ipsum ac mi eleifend"),
@@ -10,7 +10,7 @@ VALUES
   ("2021-11-04 02:35:38",80,"eu, ligula. Aenean euismod mauris eu elit. Nulla facilisi. Sed neque. Sed eget lacus. Mauris non dui nec urna suscipit nonummy. Fusce"),
   ("2021-11-23 20:35:23",73,"lobortis tellus justo sit amet nulla. Donec non justo. Proin non massa non ante bibendum ullamcorper. Duis cursus, diam at pretium aliquet, metus"),
   ("2021-11-25 22:50:17",72,"ultricies ornare, elit elit fermentum risus, at fringilla purus mauris a nunc. In at pede. Cras vulputate velit eu sem. Pellentesque ut ipsum ac mi eleifend egestas. Sed pharetra, felis");
-INSERT INTO `description` (`create_at`,`product_id`,`description`)
+INSERT IGNORE INTO `description` (`create_at`,`product_id`,`description`)
 VALUES
   ("2021-11-28 09:46:40",80,"eu nibh vulputate mauris sagittis placerat. Cras dictum ultricies ligula. Nullam enim. Sed nulla ante, iaculis nec, eleifend non, dapibus rutrum, justo."),
   ("2021-11-09 07:54:48",82,"lectus justo eu arcu. Morbi sit amet massa. Quisque porttitor eros nec tellus. Nunc lectus pede, ultrices a, auctor non, feugiat"),
@@ -22,7 +22,7 @@ VALUES
   ("2021-11-24 06:45:22",75,"purus, in molestie tortor nibh sit amet orci. Ut sagittis lobortis mauris. Suspendisse aliquet molestie tellus. Aenean egestas hendrerit neque. In ornare sagittis"),
   ("2021-11-24 18:22:10",76,"tortor, dictum eu, placerat eget, venenatis a, magna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam laoreet, libero et tristique"),
   ("2021-11-07 06:42:37",75,"sagittis lobortis mauris. Suspendisse aliquet molestie tellus. Aenean egestas hendrerit neque. In ornare sagittis felis. Donec tempor, est ac mattis semper, dui lectus");
-INSERT INTO `description` (`create_at`,`product_id`,`description`)
+INSERT IGNORE INTO `description` (`create_at`,`product_id`,`description`)
 VALUES
   ("2021-11-27 09:53:16",80,"et, rutrum non, hendrerit id, ante. Nunc mauris sapien, cursus in, hendrerit consectetuer, cursus et, magna. Praesent interdum ligula eu enim. Etiam imperdiet dictum magna. Ut tincidunt orci quis"),
   ("2021-11-21 09:09:11",77,"neque pellentesque massa lobortis ultrices. Vivamus rhoncus. Donec est. Nunc ullamcorper, velit in aliquet lobortis, nisi nibh lacinia orci, consectetuer euismod"),

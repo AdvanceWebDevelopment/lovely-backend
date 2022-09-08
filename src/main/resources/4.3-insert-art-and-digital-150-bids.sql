@@ -1,4 +1,4 @@
-INSERT INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
+INSERT IGNORE INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
 VALUES
   ("2021-12-09 04:17:43",558179757,37,63),
   ("2021-12-24 10:16:16",166912266,82,62),
@@ -10,7 +10,7 @@ VALUES
   ("2021-12-23 02:32:29",616772401,63,69),
   ("2021-12-11 06:36:48",962870894,24,70),
   ("2021-12-17 15:02:29",204427384,103,64);
-INSERT INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
+INSERT IGNORE INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
 VALUES
   ("2021-12-27 02:07:33",524536684,92,66),
   ("2021-12-26 09:36:48",596701064,102,71),
@@ -22,7 +22,7 @@ VALUES
   ("2021-12-05 22:22:32",424991884,72,70),
   ("2021-12-25 19:32:31",831134277,43,68),
   ("2021-12-24 20:43:19",249259797,94,65);
-INSERT INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
+INSERT IGNORE INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
 VALUES
   ("2021-12-20 23:49:34",364647625,61,62),
   ("2021-12-27 08:43:53",452195655,80,62),
@@ -34,7 +34,7 @@ VALUES
   ("2021-12-17 20:19:58",483419364,36,64),
   ("2021-12-03 17:28:47",25972405,62,64),
   ("2021-12-30 23:46:46",618376988,34,65);
-INSERT INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
+INSERT IGNORE INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
 VALUES
   ("2021-12-14 01:57:40",565371916,35,69),
   ("2021-12-08 01:16:06",97372207,72,70),
@@ -46,7 +46,7 @@ VALUES
   ("2021-12-10 08:33:29",816351925,96,68),
   ("2021-12-06 09:39:37",597316423,47,69),
   ("2021-12-12 09:47:33",91284637,101,71);
-INSERT INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
+INSERT IGNORE INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
 VALUES
   ("2021-12-06 19:44:50",572109286,91,65),
   ("2021-12-05 13:27:18",822016954,27,66),
@@ -58,7 +58,7 @@ VALUES
   ("2021-12-14 21:57:55",979707318,31,64),
   ("2021-12-10 15:09:26",211319672,29,65),
   ("2021-12-27 05:54:37",573915560,80,68);
-INSERT INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
+INSERT IGNORE INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
 VALUES
   ("2021-12-08 00:40:57",694791258,61,71),
   ("2021-12-18 12:24:43",391793849,71,70),
@@ -70,7 +70,7 @@ VALUES
   ("2021-12-21 03:51:14",247038035,54,69),
   ("2021-12-09 01:49:57",790226094,96,64),
   ("2021-12-15 11:21:10",275143086,109,63);
-INSERT INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
+INSERT IGNORE INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
 VALUES
   ("2021-12-11 10:59:38",564171075,66,66),
   ("2021-12-22 02:58:11",558000918,17,64),
@@ -82,7 +82,7 @@ VALUES
   ("2021-12-28 00:49:03",701642292,51,68),
   ("2021-12-22 10:49:33",305715618,85,63),
   ("2021-12-22 20:08:18",554321814,57,70);
-INSERT INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
+INSERT IGNORE INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
 VALUES
   ("2021-12-12 07:56:25",657545428,43,65),
   ("2021-12-18 23:55:29",15345371,85,64),
@@ -94,7 +94,7 @@ VALUES
   ("2021-12-26 05:59:09",777026681,35,63),
   ("2021-12-21 13:11:00",461121133,39,64),
   ("2021-12-07 11:30:57",195527714,28,67);
-INSERT INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
+INSERT IGNORE INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
 VALUES
   ("2021-12-06 18:44:19",622992627,102,67),
   ("2021-12-09 07:57:26",443222795,97,64),
@@ -106,7 +106,7 @@ VALUES
   ("2021-12-06 20:53:38",851412198,31,65),
   ("2021-12-31 19:18:35",235786603,71,70),
   ("2021-12-04 11:29:00",683422465,31,66);
-INSERT INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
+INSERT IGNORE INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
 VALUES
   ("2021-12-04 21:28:02",637248394,56,65),
   ("2021-12-12 09:17:59",841562302,99,70),
@@ -118,7 +118,7 @@ VALUES
   ("2021-12-21 22:22:16",806621803,100,64),
   ("2021-12-06 06:09:55",151252085,31,65),
   ("2021-12-28 20:35:34",722405763,84,69);
-INSERT INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
+INSERT IGNORE INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
 VALUES
   ("2021-12-21 00:21:39",565957860,57,65),
   ("2021-12-20 14:34:48",442391832,16,63),
@@ -130,7 +130,7 @@ VALUES
   ("2021-12-04 03:47:51",811371276,15,64),
   ("2021-12-19 14:26:22",823478200,39,62),
   ("2021-12-02 13:47:58",595990567,88,67);
-INSERT INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
+INSERT IGNORE INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
 VALUES
   ("2021-12-15 10:30:05",172582891,31,69),
   ("2021-12-26 09:30:03",500676300,30,66),
@@ -142,7 +142,7 @@ VALUES
   ("2021-12-28 21:40:21",369583091,94,63),
   ("2021-12-24 15:24:10",74933141,109,66),
   ("2021-12-27 19:54:48",54988840,24,63);
-INSERT INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
+INSERT IGNORE INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
 VALUES
   ("2021-12-09 17:45:48",954755519,74,70),
   ("2021-12-18 17:42:15",544410514,104,68),
@@ -154,7 +154,7 @@ VALUES
   ("2021-12-11 21:52:30",235515492,92,65),
   ("2021-12-04 21:32:47",985213419,96,70),
   ("2021-12-26 14:51:16",608157990,56,67);
-INSERT INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
+INSERT IGNORE INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
 VALUES
   ("2021-12-03 01:12:12",240457135,99,62),
   ("2021-12-02 17:51:48",496137094,58,68),
@@ -166,7 +166,7 @@ VALUES
   ("2021-12-15 23:07:24",319143901,81,63),
   ("2021-12-19 19:11:38",665129786,52,70),
   ("2021-12-10 23:12:46",988066876,42,63);
-INSERT INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
+INSERT IGNORE INTO `product_bidder` (`bid_at`,`price`,`bidder_id`,`product_id`)
 VALUES
   ("2021-12-02 13:34:04",7509159,53,65),
   ("2021-12-08 19:45:33",626198466,64,67),
