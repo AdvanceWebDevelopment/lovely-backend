@@ -26,4 +26,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: kafkawannafly/doran-house.lovely-backend:${{ github.run_number }}
+          tags: |
+            kafkawannafly/doran-house.lovely-backend:${{ github.run_number }}
+            kafkawannafly/doran-house.lovely-backend:latest
