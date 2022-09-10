@@ -8,7 +8,7 @@ COPY src src
 
 RUN sed -i 's/\r$//' mvnw
 RUN chmod +x mvnw
-RUN ./mvnw install -DskipTests
+RUN ./mvnw install -DskipTests --no-transfer-progress
 RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
 
 FROM eclipse-temurin:11.0.16.1_1-jdk
