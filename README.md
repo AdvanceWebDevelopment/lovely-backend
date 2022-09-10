@@ -29,4 +29,4 @@ curl --location --request GET 'http://localhost:9090' \
 
 Check out `src/main/java/controller` for more endpoints.
 
-If your DB has no data, check out `src/main/resources` and execute them in ascending order (make sure you have connected to MySQL first). 
+If your DB has no data, check out `src/main/resources` and execute them in ascending order (make sure you have connected to MySQL first).
