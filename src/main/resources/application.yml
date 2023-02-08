@@ -11,7 +11,7 @@ spring:
         hibernate:
           format_sql: true
           dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-    show-sql: true
+    show-sql: false
 
   security:
     oauth2:
@@ -83,7 +83,7 @@ app:
     tokenSecret: ${APP_AUTH_SECRET}
     tokenExpirationMsec: 864000000
   cors:
-    allowedOrigins: ${ALLOWED_ORIGINS}
+    allowedOriginPatterns: ${ALLOWED_ORIGIN_PATTERNS}
   oauth2:
     # After successfully authenticating with the OAuth2 Provider,
     # we'll be generating an auth token for the user and sending the token to the
@@ -99,10 +99,10 @@ jwt:
 
 server:
   http:
-    port: 80
+    port: ${HTTP_PORT}
   port: 443
   ssl:
-    enable: true
+    enable: false
 #    key-store-type: PKCS12
     key-store: classpath:keystore/keystore.jks
     key-store-password: ${KEY_STORE_PASSWORD}
