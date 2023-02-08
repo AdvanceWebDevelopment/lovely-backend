@@ -1,0 +1,1128 @@
+{
+	"info": {
+		"_postman_id": "25d61bc2-158e-4db2-b9cd-ec436485daec",
+		"name": "Doran",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13622033"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Delete Category",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "refresh-token",
+								"value": "JaegTwGgRhIOKltiQUIzpQcNTFiTRJVM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/admin/category/15",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"category",
+								"15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "refresh-token",
+								"value": "JaegTwGgRhIOKltiQUIzpQcNTFiTRJVM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/admin/product/85",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"product",
+								"85"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login Basic",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"rachelvelasquez1166@hotmail.ca\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/auth/login",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login Basic",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"tarzanchemgio@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/auth/login",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Dec 2021 14:45:51 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"accessToken\": \"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0YXJ6YW5jaGVtZ2lvQGdtYWlsLmNvbSIsIlJPTEVfQklEREVSIjp0cnVlLCJleHAiOjE2NDA4NzU2MTEsImlhdCI6MTY0MDg3NTU1MX0.HGFUdN4RfcFEEBJLc4maTBD1Wz0-u9jX4RzVv87q6uMkHjUcPTJI_qL0oPSf3BL27nEmd9yVZbdE3zcQhPj6Yg\",\n    \"tokenType\": \"Bearer\",\n    \"refreshToken\": \"AQfhhOotCFxQIZFWGrBARitZWsFbThBc\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"tarzanchemgio@gmail.com\",\r\n    \"password\": \"12345678\",\r\n    \"name\": \"Dinh Hoang Duong\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/auth/register",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"tarzanchemgio@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/auth/forgot-password",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify OTP",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"tarzanchemgio@gmail.com\",\r\n    \"otp\": \"848975\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/auth/verify",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"verify"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Verify OTP",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"tarzanchemgio@gmail.com\",\r\n    \"otp\": \"352192\",\r\n    \"name\": \"Dinh Hoang Duong\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/api/auth/verify",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"auth",
+										"verify"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Get categories",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/category",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get categories",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/category",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"category"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 19 Dec 2021 10:13:16 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Tất Cả\",\n        \"subCategories\": []\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Điện Tử\",\n        \"subCategories\": [\n            {\n                \"id\": 1,\n                \"name\": \"Laptop\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Smart Phone\"\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Phụ Kiện\",\n        \"subCategories\": [\n            {\n                \"id\": 3,\n                \"name\": \"Đồng Hồ\"\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Thắt Lưng\"\n            }\n        ]\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Nội Thất\",\n        \"subCategories\": [\n            {\n                \"id\": 5,\n                \"name\": \"Giường\"\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Bàn Ghế\"\n            }\n        ]\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Trang Sức\",\n        \"subCategories\": [\n            {\n                \"id\": 7,\n                \"name\": \"Nhẫn\"\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Vòng Cổ\"\n            }\n        ]\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Tranh Vẽ\",\n        \"subCategories\": [\n            {\n                \"id\": 9,\n                \"name\": \"Kỹ Thuật Số\"\n            },\n            {\n                \"id\": 10,\n                \"name\": \"Hiện Vật\"\n            }\n        ]\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Phương Tiện Di Chuyển\",\n        \"subCategories\": [\n            {\n                \"id\": 11,\n                \"name\": \"Xe Hơi\"\n            },\n            {\n                \"id\": 12,\n                \"name\": \"Tàu Bè\"\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Sub Categories",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/subcategory",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"subcategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product By Category",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/category/2/products?page=0&size=12",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"category",
+								"2",
+								"products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Product By Category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/api/category/2/products?page=1&size=12",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"category",
+										"2",
+										"products"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "size",
+											"value": "12"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 26 Dec 2021 07:10:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 6,\n            \"name\": \"Iphone 13\",\n            \"createAt\": \"2021-12-19T16:27:48\",\n            \"endAt\": \"2021-12-19T16:27:48\",\n            \"currentPrice\": 1310,\n            \"stepPrice\": 0,\n            \"quickPrice\": null,\n            \"bidderHighest\": null,\n            \"autoBid\": false,\n            \"status\": false,\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Viet Hoang\",\n                \"email\": \"daoleviethoang@gmail.com\",\n                \"imageUrl\": null,\n                \"role\": 2,\n                \"point\": 0\n            },\n            \"subCategory\": {\n                \"id\": 2,\n                \"name\": \"Smart Phone\",\n                \"category\": {\n                    \"id\": 2,\n                    \"name\": \"Điện Tử\"\n                }\n            },\n            \"images\": [\n                {\n                    \"id\": 11,\n                    \"isMain\": true,\n                    \"url\": \"https://images.fpt.shop/unsafe/fit-in/960x640/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/11/4/637716443491808351_5.jpg\"\n                },\n                {\n                    \"id\": 12,\n                    \"isMain\": false,\n                    \"url\": \"https://images.fpt.shop/unsafe/fit-in/960x640/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/11/4/637716443491808351_3.jpg\"\n                }\n            ],\n            \"descriptions\": [],\n            \"currentBids\": 0\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Iphone 12\",\n            \"createAt\": \"2021-12-19T16:27:49\",\n            \"endAt\": \"2021-12-19T16:27:49\",\n            \"currentPrice\": 1200,\n            \"stepPrice\": 0,\n            \"quickPrice\": null,\n            \"bidderHighest\": null,\n            \"autoBid\": false,\n            \"status\": false,\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Viet Hoang\",\n                \"email\": \"daoleviethoang@gmail.com\",\n                \"imageUrl\": null,\n                \"role\": 2,\n                \"point\": 0\n            },\n            \"subCategory\": {\n                \"id\": 2,\n                \"name\": \"Smart Phone\",\n                \"category\": {\n                    \"id\": 2,\n                    \"name\": \"Điện Tử\"\n                }\n            },\n            \"images\": [\n                {\n                    \"id\": 13,\n                    \"isMain\": true,\n                    \"url\": \"https://images.fpt.shop/unsafe/fit-in/960x640/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/11/4/637716443491808351_5.jpg\"\n                },\n                {\n                    \"id\": 14,\n                    \"isMain\": false,\n                    \"url\": \"https://images.fpt.shop/unsafe/fit-in/960x640/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/11/4/637716443491808351_3.jpg\"\n                }\n            ],\n            \"descriptions\": [],\n            \"currentBids\": 0\n        },\n        {\n            \"id\": 57,\n            \"name\": \"test\",\n            \"createAt\": \"2021-12-23T23:18:26\",\n            \"endAt\": \"2022-12-23T22:56:53\",\n            \"currentPrice\": 1000000,\n            \"stepPrice\": 100000,\n            \"quickPrice\": 3000000,\n            \"bidderHighest\": {\n                \"id\": 50,\n                \"name\": \"Abel Wilder\",\n                \"email\": \"abelwilder@protonmail.ca\",\n                \"imageUrl\": null,\n                \"role\": 1,\n                \"point\": 0\n            },\n            \"autoBid\": false,\n            \"status\": false,\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Viet Hoang\",\n                \"email\": \"daoleviethoang@gmail.com\",\n                \"imageUrl\": null,\n                \"role\": 2,\n                \"point\": 0\n            },\n            \"subCategory\": {\n                \"id\": 2,\n                \"name\": \"Smart Phone\",\n                \"category\": {\n                    \"id\": 2,\n                    \"name\": \"Điện Tử\"\n                }\n            },\n            \"images\": [],\n            \"descriptions\": [\n                {\n                    \"id\": 36,\n                    \"createAt\": \"2021-12-24T01:09:19\",\n                    \"description\": \"test update description\"\n                },\n                {\n                    \"id\": 37,\n                    \"createAt\": \"2021-12-24T01:09:31\",\n                    \"description\": \"test update description\"\n                }\n            ],\n            \"currentBids\": 3\n        },\n        {\n            \"id\": 58,\n            \"name\": \"test\",\n            \"createAt\": \"2021-12-23T23:22:02\",\n            \"endAt\": \"2022-12-23T22:56:53\",\n            \"currentPrice\": 1000000,\n            \"stepPrice\": 100000,\n            \"quickPrice\": 3000000,\n            \"bidderHighest\": null,\n            \"autoBid\": false,\n            \"status\": true,\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Viet Hoang\",\n                \"email\": \"daoleviethoang@gmail.com\",\n                \"imageUrl\": null,\n                \"role\": 2,\n                \"point\": 0\n            },\n            \"subCategory\": {\n                \"id\": 2,\n                \"name\": \"Smart Phone\",\n                \"category\": {\n                    \"id\": 2,\n                    \"name\": \"Điện Tử\"\n                }\n            },\n            \"images\": [],\n            \"descriptions\": [],\n            \"currentBids\": 0\n        },\n        {\n            \"id\": 59,\n            \"name\": \"test\",\n            \"createAt\": \"2021-12-23T23:25:56\",\n            \"endAt\": \"2022-12-23T22:56:53\",\n            \"currentPrice\": 1000000,\n            \"stepPrice\": 100000,\n            \"quickPrice\": 3000000,\n            \"bidderHighest\": null,\n            \"autoBid\": false,\n            \"status\": false,\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Viet Hoang\",\n                \"email\": \"daoleviethoang@gmail.com\",\n                \"imageUrl\": null,\n                \"role\": 2,\n                \"point\": 0\n            },\n            \"subCategory\": {\n                \"id\": 2,\n                \"name\": \"Smart Phone\",\n                \"category\": {\n                    \"id\": 2,\n                    \"name\": \"Điện Tử\"\n                }\n            },\n            \"images\": [\n                {\n                    \"id\": 46,\n                    \"isMain\": false,\n                    \"url\": \"https://images.fpt.shop/unsafe/fit-in/960x640/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/11/4/637716443491808351_5.jpg\"\n                },\n                {\n                    \"id\": 47,\n                    \"isMain\": true,\n                    \"url\": \"https://images.fpt.shop/unsafe/fit-in/960x640/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/11/4/637716443491808351_5.jpg\"\n                }\n            ],\n            \"descriptions\": [\n                {\n                    \"id\": 31,\n                    \"createAt\": \"2021-12-23T23:25:56\",\n                    \"description\": \"<div class='DraftEditor-editorContainer'><div aria-describedby='placeholder-8unvh' aria-label='rdw-editor' class='notranslate public-DraftEditor-content' contenteditable='true' role='textbox' spellcheck='false' style='outline: none; user-select: text; white-space: pre-wrap; overflow-wrap: break-word;'><div data-contents='true'><div class='' data-block='true' data-editor='8unvh' data-offset-key='chn70-0-0'><div data-offset-key='chn70-0-0' class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr'><span data-offset-key='chn70-0-0'><span data-text='true'>a</span></span></div></div><div class='' data-block='true' data-editor='8unvh' data-offset-key='9lgqg-0-0'><div data-offset-key='9lgqg-0-0' class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr'><span data-offset-key='9lgqg-0-0' style='font-weight: bold;'><span data-text='true'>b</span></span></div></div><div class='' data-block='true' data-editor='8unvh' data-offset-key='80vm8-0-0'><div data-offset-key='80vm8-0-0' class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr'><span data-offset-key='80vm8-0-0' style='font-weight: bold; font-style: italic;'><span data-text='true'>c</span></span></div></div><ul class='public-DraftStyleDefault-ul' data-offset-key='fi9bl-0-0'><li class='public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR' data-block='true' data-editor='8unvh' data-offset-key='fi9bl-0-0'><div data-offset-key='fi9bl-0-0' class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr'><span data-offset-key='fi9bl-0-0' style='font-weight: bold; font-style: italic; font-size: 11px; position: relative; top: -8px; display: inline-flex;'><span data-text='true'>1</span></span></div></li><li class='public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR' data-block='true' data-editor='8unvh' data-offset-key='ckpd9-0-0'><div data-offset-key='ckpd9-0-0' class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr'><span data-offset-key='ckpd9-0-0' style='font-weight: bold; font-style: italic; text-decoration: line-through;'><span data-text='true'>2</span></span></div></li><li class='public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR' data-block='true' data-editor='8unvh' data-offset-key='n79k-0-0'><div data-offset-key='n79k-0-0' class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr'><span data-offset-key='n79k-0-0' style='font-weight: bold; font-style: italic;'><span data-text='true'>3</span></span></div></li></ul></div></div></div>\"\n                }\n            ],\n            \"currentBids\": 0\n        },\n        {\n            \"id\": 60,\n            \"name\": \"test\",\n            \"createAt\": \"2021-12-23T23:40:08\",\n            \"endAt\": \"2021-12-19T16:27:47\",\n            \"currentPrice\": 1000000,\n            \"stepPrice\": 100000,\n            \"quickPrice\": 3000000,\n            \"bidderHighest\": null,\n            \"autoBid\": false,\n            \"status\": true,\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Viet Hoang\",\n                \"email\": \"daoleviethoang@gmail.com\",\n                \"imageUrl\": null,\n                \"role\": 2,\n                \"point\": 0\n            },\n            \"subCategory\": {\n                \"id\": 2,\n                \"name\": \"Smart Phone\",\n                \"category\": {\n                    \"id\": 2,\n                    \"name\": \"Điện Tử\"\n                }\n            },\n            \"images\": [\n                {\n                    \"id\": 93,\n                    \"isMain\": false,\n                    \"url\": \"https://images.fpt.shop/unsafe/fit-in/960x640/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/11/4/637716443491808351_5.jpg\"\n                },\n                {\n                    \"id\": 92,\n                    \"isMain\": true,\n                    \"url\": \"https://images.fpt.shop/unsafe/fit-in/960x640/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/11/4/637716443491808351_5.jpg\"\n                }\n            ],\n            \"descriptions\": [\n                {\n                    \"id\": 32,\n                    \"createAt\": \"2021-12-23T23:40:08\",\n                    \"description\": \"<div class='DraftEditor-editorContainer'><div aria-describedby='placeholder-8unvh' aria-label='rdw-editor' class='notranslate public-DraftEditor-content' contenteditable='true' role='textbox' spellcheck='false' style='outline: none; user-select: text; white-space: pre-wrap; overflow-wrap: break-word;'><div data-contents='true'><div class='' data-block='true' data-editor='8unvh' data-offset-key='chn70-0-0'><div data-offset-key='chn70-0-0' class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr'><span data-offset-key='chn70-0-0'><span data-text='true'>a</span></span></div></div><div class='' data-block='true' data-editor='8unvh' data-offset-key='9lgqg-0-0'><div data-offset-key='9lgqg-0-0' class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr'><span data-offset-key='9lgqg-0-0' style='font-weight: bold;'><span data-text='true'>b</span></span></div></div><div class='' data-block='true' data-editor='8unvh' data-offset-key='80vm8-0-0'><div data-offset-key='80vm8-0-0' class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr'><span data-offset-key='80vm8-0-0' style='font-weight: bold; font-style: italic;'><span data-text='true'>c</span></span></div></div><ul class='public-DraftStyleDefault-ul' data-offset-key='fi9bl-0-0'><li class='public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR' data-block='true' data-editor='8unvh' data-offset-key='fi9bl-0-0'><div data-offset-key='fi9bl-0-0' class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr'><span data-offset-key='fi9bl-0-0' style='font-weight: bold; font-style: italic; font-size: 11px; position: relative; top: -8px; display: inline-flex;'><span data-text='true'>1</span></span></div></li><li class='public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR' data-block='true' data-editor='8unvh' data-offset-key='ckpd9-0-0'><div data-offset-key='ckpd9-0-0' class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr'><span data-offset-key='ckpd9-0-0' style='font-weight: bold; font-style: italic; text-decoration: line-through;'><span data-text='true'>2</span></span></div></li><li class='public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR' data-block='true' data-editor='8unvh' data-offset-key='n79k-0-0'><div data-offset-key='n79k-0-0' class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr'><span data-offset-key='n79k-0-0' style='font-weight: bold; font-style: italic;'><span data-text='true'>3</span></span></div></li></ul></div></div></div>\"\n                }\n            ],\n            \"currentBids\": 0\n        },\n        {\n            \"id\": 61,\n            \"name\": \"test\",\n            \"createAt\": \"2021-12-23T23:52:49\",\n            \"endAt\": \"2021-12-19T16:27:47\",\n            \"currentPrice\": 1000000,\n            \"stepPrice\": 100000,\n            \"quickPrice\": 3000000,\n            \"bidderHighest\": null,\n            \"autoBid\": false,\n            \"status\": true,\n            \"seller\": {\n                \"id\": 1,\n                \"name\": \"Viet Hoang\",\n                \"email\": \"daoleviethoang@gmail.com\",\n                \"imageUrl\": null,\n                \"role\": 2,\n                \"point\": 0\n            },\n            \"subCategory\": {\n                \"id\": 2,\n                \"name\": \"Smart Phone\",\n                \"category\": {\n                    \"id\": 2,\n                    \"name\": \"Điện Tử\"\n                }\n            },\n            \"images\": [\n                {\n                    \"id\": 94,\n                    \"isMain\": true,\n                    \"url\": \"https://images.fpt.shop/unsafe/fit-in/960x640/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/11/4/637716443491808351_5.jpg\"\n                },\n                {\n                    \"id\": 95,\n                    \"isMain\": false,\n                    \"url\": \"https://images.fpt.shop/unsafe/fit-in/960x640/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/11/4/637716443491808351_5.jpg\"\n                }\n            ],\n            \"descriptions\": [\n                {\n                    \"id\": 40,\n                    \"createAt\": \"2021-11-03T07:58:51\",\n                    \"description\": \"Ut nec urna et arcu imperdiet ullamcorper. Duis at lacus. Quisque purus sapien, gravida non, sollicitudin a, malesuada id, erat. Etiam vestibulum massa\"\n                },\n                {\n                    \"id\": 55,\n                    \"createAt\": \"2021-11-17T20:29:19\",\n                    \"description\": \"interdum feugiat. Sed nec metus facilisis lorem tristique aliquet. Phasellus fermentum convallis ligula. Donec luctus aliquet odio. Etiam ligula tortor, dictum eu, placerat eget, venenatis\"\n                },\n                {\n                    \"id\": 44,\n                    \"createAt\": \"2021-11-21T04:39:07\",\n                    \"description\": \"erat, in consectetuer ipsum nunc id enim. Curabitur massa. Vestibulum accumsan neque et nunc. Quisque ornare tortor at risus. Nunc ac sem ut dolor dapibus gravida. Aliquam tincidunt, nunc\"\n                },\n                {\n                    \"id\": 33,\n                    \"createAt\": \"2021-12-23T23:52:49\",\n                    \"description\": \"<div class='DraftEditor-editorContainer'><div aria-describedby='placeholder-8unvh' aria-label='rdw-editor' class='notranslate public-DraftEditor-content' contenteditable='true' role='textbox' spellcheck='false' style='outline: none; user-select: text; white-space: pre-wrap; overflow-wrap: break-word;'><div data-contents='true'><div class='' data-block='true' data-editor='8unvh' data-offset-key='chn70-0-0'><div data-offset-key='chn70-0-0' class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr'><span data-offset-key='chn70-0-0'><span data-text='true'>a</span></span></div></div><div class='' data-block='true' data-editor='8unvh' data-offset-key='9lgqg-0-0'><div data-offset-key='9lgqg-0-0' class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr'><span data-offset-key='9lgqg-0-0' style='font-weight: bold;'><span data-text='true'>b</span></span></div></div><div class='' data-block='true' data-editor='8unvh' data-offset-key='80vm8-0-0'><div data-offset-key='80vm8-0-0' class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr'><span data-offset-key='80vm8-0-0' style='font-weight: bold; font-style: italic;'><span data-text='true'>c</span></span></div></div><ul class='public-DraftStyleDefault-ul' data-offset-key='fi9bl-0-0'><li class='public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-reset public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR' data-block='true' data-editor='8unvh' data-offset-key='fi9bl-0-0'><div data-offset-key='fi9bl-0-0' class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr'><span data-offset-key='fi9bl-0-0' style='font-weight: bold; font-style: italic; font-size: 11px; position: relative; top: -8px; display: inline-flex;'><span data-text='true'>1</span></span></div></li><li class='public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR' data-block='true' data-editor='8unvh' data-offset-key='ckpd9-0-0'><div data-offset-key='ckpd9-0-0' class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr'><span data-offset-key='ckpd9-0-0' style='font-weight: bold; font-style: italic; text-decoration: line-through;'><span data-text='true'>2</span></span></div></li><li class='public-DraftStyleDefault-unorderedListItem public-DraftStyleDefault-depth0 public-DraftStyleDefault-listLTR' data-block='true' data-editor='8unvh' data-offset-key='n79k-0-0'><div data-offset-key='n79k-0-0' class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr'><span data-offset-key='n79k-0-0' style='font-weight: bold; font-style: italic;'><span data-text='true'>3</span></span></div></li></ul></div></div></div>\"\n                }\n            ],\n            \"currentBids\": 4\n        }\n    ],\n    \"pageable\": {\n        \"sort\": {\n            \"empty\": true,\n            \"sorted\": false,\n            \"unsorted\": true\n        },\n        \"offset\": 12,\n        \"pageNumber\": 1,\n        \"pageSize\": 12,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"last\": true,\n    \"totalPages\": 2,\n    \"totalElements\": 19,\n    \"size\": 12,\n    \"number\": 1,\n    \"sort\": {\n        \"empty\": true,\n        \"sorted\": false,\n        \"unsorted\": true\n    },\n    \"first\": false,\n    \"numberOfElements\": 7,\n    \"empty\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "Add category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refresh-token",
+								"value": "sOVZkRSEzokzARuWVUjlSKaIskRzBuOy",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Danh Mục Test\",\r\n    \"subCategories\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/admin/category",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"admin",
+								"category"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User Me",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "refresh-token",
+								"value": "WMoDMfXufoxqQLBgklgcJgKOUzpoLHHf",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/user/me",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Selling Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0YXJ6YW5jaGVtZ2lvQGdtYWlsLmNvbSIsIlJPTEVfU0VMTEVSIjp0cnVlLCJleHAiOjE2NDEwMjY1NjQsImlhdCI6MTY0MTAyNjUwNH0.txiXosbtoGxa7MAY262hvKU5D-ByoXrLYvjamGzTeANg-A4_SVO8lByuQZiDDPDju-20pAiZEpQNWTZTbuF8ZQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "refresh-token",
+								"value": "iCqJZZqJzMJYEXjVIrubTaDXOtpZjjBg",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/seller/products?page=0&size=99",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"seller",
+								"products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "99"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Winners",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0YXJ6YW5jaGVtZ2lvQGdtYWlsLmNvbSIsIlJPTEVfU0VMTEVSIjp0cnVlLCJleHAiOjE2NDExMDMwMDIsImlhdCI6MTY0MTEwMjk0Mn0.kCh-6ycWnHwNQzHBJEy70v4HCdnYDsy97qNXvxdk6uw0Co9qfCJ-jMnwz7xOIWSq-aTWTY9gPGp1pDb_4g_0YA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "refresh-token",
+								"value": "mbGlufcilpxpAPtZoNpIAAgcyarnaVas",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/seller/products/win?page=0&size=12",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"seller",
+								"products",
+								"win"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get watchlist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0YXJ6YW5jaGVtZ2lvQGdtYWlsLmNvbSIsIlJPTEVfU0VMTEVSIjp0cnVlLCJleHAiOjE2NDExMDMwMDIsImlhdCI6MTY0MTEwMjk0Mn0.kCh-6ycWnHwNQzHBJEy70v4HCdnYDsy97qNXvxdk6uw0Co9qfCJ-jMnwz7xOIWSq-aTWTY9gPGp1pDb_4g_0YA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "refresh-token",
+								"value": "mbGlufcilpxpAPtZoNpIAAgcyarnaVas",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/user/watch-list?page=0&size=12",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"watch-list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get by id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/product/91",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"91"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Most Bid",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/products?top=most-bids",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"products"
+							],
+							"query": [
+								{
+									"key": "top",
+									"value": "most-bids"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search product",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/product?text=&page=0&size=12&categoryId=1&subCategory=9",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"product"
+							],
+							"query": [
+								{
+									"key": "text",
+									"value": ""
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "12"
+								},
+								{
+									"key": "categoryId",
+									"value": "1"
+								},
+								{
+									"key": "subCategory",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0YXJ6YW5jaGVtZ2lvQGdtYWlsLmNvbSIsIlJPTEVfU0VMTEVSIjp0cnVlLCJleHAiOjE2NDEwMjE5ODcsImlhdCI6MTY0MTAyMTkyN30.i0BAAq_10Xwv5iB0bAHVE1gYKs_VjpsxMvjtiNZn6DpGSi1DKY8NFcaXpOSlKfnHdbo8yi2BbcYSEM05OyECBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "refresh-token",
+								"value": "LenEVfTVhINORFnkIksIbVLzQbwaRuzI",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Test Post 1\",\r\n    \"endAt\": \"2022-01-02T07:27:40.830Z\",\r\n    \"currentPrice\": 1000,\r\n    \"stepPrice\": 1000,\r\n    \"quickPrice\": 50000000,\r\n    \"autoBid\": true,\r\n    \"subCategory\": {\r\n        \"id\": 7\r\n    },\r\n    \"images\": [\r\n        {\r\n            \"url\": \"https://res.cloudinary.com/nettruyenz/image/upload/v1640856577/DoranHouse/hgioetmw835vae4ymtz4.jpg\",\r\n            \"isMain\": true\r\n        },\r\n        {\r\n            \"url\": \"https://res.cloudinary.com/nettruyenz/image/upload/v1640876265/DoranHouse/48cea168b9f8f450c5fc3262b53d0d5a_u2y1oy.jpg\",\r\n            \"isMain\": false\r\n        },\r\n        {\r\n            \"url\": \"https://res.cloudinary.com/nettruyenz/image/upload/v1640876266/DoranHouse/677410_u36adc.jpg\",\r\n            \"isMain\": false\r\n        }\r\n    ],\r\n    \"descriptions\": [\r\n        {\r\n            \"description\": \"Test product\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/seller/product",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"seller",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bid Product",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "refresh-token",
+								"value": "FtvbfTKPcYqudgHSrAzhtoqHuqGzTSBy",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"price\": 4200\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/bidder/product/102",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"bidder",
+								"product",
+								"102"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buy Product",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "refresh-token",
+								"value": "FtvbfTKPcYqudgHSrAzhtoqHuqGzTSBy",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/bidder/product/95/buy",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"bidder",
+								"product",
+								"95",
+								"buy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Bidding Product",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "refresh-token",
+								"value": "FtvbfTKPcYqudgHSrAzhtoqHuqGzTSBy",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"price\": 8000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/bidder/product?page=0&size=99",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"bidder",
+								"product"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "99"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get product history",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "refresh-token",
+								"value": "FtvbfTKPcYqudgHSrAzhtoqHuqGzTSBy",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"price\": 4400000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/product/64/history?page=0&size=99",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"64",
+								"history"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "99"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}",
+					"host": [
+						"{{host}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYWNoZWx2ZWxhc3F1ZXoxMTY2QGhvdG1haWwuY2EiLCJST0xFX1NFTExFUiI6dHJ1ZSwiZXhwIjoxNjQxMzE3Nzk0LCJpYXQiOjE2NDEzMTc3MzR9.Jz7bFDl1spzQrk2WiiZVx9m95afNILfofAkCpfqrA6h2arsQy1a7g5CFuzxVltzO9IHFV2Mlg7cfD0ebKtlptg",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
